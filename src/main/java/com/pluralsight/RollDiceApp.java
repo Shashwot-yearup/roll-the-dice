@@ -24,15 +24,15 @@ public class RollDiceApp {
             System.out.println("Roll 1 " + i + roll1 + "Roll 2 " + roll2 + "sum = " + sum);
 
             //if to check if the rolled numbers is 2 4 6 and 7
-            if (sum == 2);
+            if (sum == 2)
                 twoCounter += 1;
-            if (sum == 4);
+            if (sum == 4)
                 fourCounter += 1;
-            if (sum == 6);
+            if (sum == 6)
                 sixCounter += 1;
-            if (sum == 7);
+            if (sum == 7)
                 sevenCounter += 1;
-
         }
+
     }
 }

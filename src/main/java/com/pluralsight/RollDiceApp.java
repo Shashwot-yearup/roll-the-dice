@@ -14,7 +14,14 @@ public class RollDiceApp {
         //for loop to loop 100times
         for (int i = 1; i <= 100 ; i++) {
 
+            //rolls the dice.
+            int roll1 = dice.roll(1, 6);
+            int roll2 = dice.roll(1, 6);
 
+            int sum = roll1 + roll2; //sums of the dice
+
+            //sout the result.
+            System.out.println("Roll 1 " + i + roll1 + "Roll 2 " + roll2 + "sum = " + sum);
         }
 
     }

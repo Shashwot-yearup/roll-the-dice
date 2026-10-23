@@ -12,7 +12,7 @@ public class RollDiceApp {
         int sevenCounter = 0;
 
         //for loop to loop 100times
-        for (int i = 1; i <= 100 ; i++) {
+        for (int i = 1; i <= 100; i++) {
 
             //rolls the dice.
             int roll1 = dice.roll(1, 6);
@@ -21,18 +21,29 @@ public class RollDiceApp {
             int sum = roll1 + roll2; //sums of the dice
 
             //sout the result.
-            System.out.println("Roll 1 " + i + roll1 + "Roll 2 " + roll2 + "sum = " + sum);
+            System.out.println("Roll " + i
+                    + ": Dice 1 = " + roll1
+                    + ", Dice 2 = " + roll2
+                    + ", Sum = " + sum);
 
             //if to check if the rolled numbers is 2 4 6 and 7
-            if (sum == 2);
+            if (sum == 2)
                 twoCounter += 1;
-            if (sum == 4);
+            if (sum == 4)
                 fourCounter += 1;
-            if (sum == 6);
+            if (sum == 6)
                 sixCounter += 1;
-            if (sum == 7);
+            if (sum == 7)
                 sevenCounter += 1;
-
         }
+        //sout how many times the sum of 2 4 6 and 7 was called.
+        System.out.println("\n╔══════════════════════════════╗");
+        System.out.println("║      🎲 DICE STATISTICS 🎲   ║");
+        System.out.println("╠══════════════════════════════╣");
+        System.out.printf("║  Sum of 2  : %-15d ║%n", twoCounter);
+        System.out.printf("║  Sum of 4  : %-15d ║%n", fourCounter);
+        System.out.printf("║  Sum of 6  : %-15d ║%n", sixCounter);
+        System.out.printf("║  Sum of 7  : %-15d ║%n", sevenCounter);
+        System.out.println("╚══════════════════════════════╝");
     }
 }

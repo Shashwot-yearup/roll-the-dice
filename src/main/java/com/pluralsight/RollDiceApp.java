@@ -12,7 +12,7 @@ public class RollDiceApp {
         int sevenCounter = 0;
 
         //for loop to loop 100times
-        //for (int i = 1; i <= 100 ; i++) {
+        for (int i = 1; i <= 100 ; i++) {
 
 
         }
